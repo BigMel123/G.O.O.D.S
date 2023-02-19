@@ -1,0 +1,145 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#000000,20%, #000000);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after{
+    content: '';
+    height:3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 50%; right: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    transition-property: width;
+    transition-duration: 0.5s;
+
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15px;
+    font-size: 2em;
+}
+.content hl{
+    position: relative;
+    width: 200px;
+
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.banner1{
+    width: 100%;
+    height: 100vh;
+    background: radial-gradient(#FFFF,20%, #FFFF);
+    background-size: cover;
+    background-position: center;
+
+}
+.login {
+    margin: 50px auto;
+    width: 320px;
+  }
+
+  .login form {
+    margin: auto;
+    padding: 22px 22px 22px 22px;
+    width: 100%;
+    border-radius: 5px;
+    background: #282e33;
+    border-top: 3px solid #434a52;
+    border-bottom: 3px solid #434a52;
+  }
+
+  .login form span {
+    background-color: #363b41;
+    border-radius: 3px 0px 0px 3px;
+    border-right: 3px solid #434a52;
+    color: #606468;
+    display: block;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+  }
+
+  .login form input[type="email"] {
+    background-color: #3b4148;
+    border-radius: 0px 3px 3px 0px;
+    color: #a9a9a9;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 90%;
+    height: 50px;
+  }
+
+  .login form input[type="password"] {
+    background-color: #3b4148;
+    border-radius: 0px 3px 3px 0px;
+    color: #a9a9a9;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 90%;
+    height: 50px;
+  }
+
+  .login form input[type="submit"] {
+    background: #b5cd60;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  #login form input[type="submit"]:hover {
+    background: #16aa56;
+  }
+
